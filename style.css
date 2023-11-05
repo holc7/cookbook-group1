@@ -352,3 +352,10 @@ main {
 		max-width: 60%;
 	}
 }
+
+
+/*Apply style for one of the pics in Mihaela's carusel in her page */
+
+.icecream-ball {
+	object-fit: cover;
+}
