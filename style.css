@@ -1,53 +1,66 @@
+/* Set default styles for all elements */
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
+.navbar-nav {
+	display: flex;
+	align-content: center;
+	align-items: center;
+}
+
+
+/* Add transition effect to nav links */
 .nav-link {
 	transition: 0.3s ease-in-out;
 }
 
+/* Add transition effect to navbar brand image */
 .navbar-brand > img {
 	transition: ease-in-out 0.3s;
 }
 
+/* Set border radius and position for card image top */
 .card-img-top {
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
 	position: relative;
 }
+
+/* Set background image, size, and animation for the body 
 #body {
 	background: url("./resources/gbgx1.png") repeat fixed;
 	background-size: auto;
-	animation: slide 100s linear;
-}
+	animation: slide 100s linear; 
+}*/
 
+/* Set position and styles for the back to top button */
 #btn-back-to-top {
 	position: fixed;
 	bottom: 20px;
 	right: 20px;
-	z-index: 1000; 
-  }
+	z-index: 1000;
+}
 
+/* Define animation keyframes for the slide animation */
 @keyframes slide {
 	0% {
 		background-position: left;
 	}
-
 	100% {
 		background-position: right;
 	}
 }
 
+/* Set animation, border radius, and styles for the bottom image */
 #bottom-img {
-
 	animation: rotate 50s infinite linear;
-
-  
 	border-radius: 50%;
 }
 
+/* Define animation keyframes for the rotate animation */
 @keyframes rotate {
 	from {
 		transform: rotate(-360deg);
@@ -57,10 +70,12 @@
 	}
 }
 
+/* Add transition effect to card */
 .card {
 	transition: 0.4s ease-in-out;
 }
 
+/* Set styles for label */
 .label {
 	display: inline-flex;
 	align-items: center;
@@ -71,6 +86,7 @@
 	margin-right: 0.3125rem;
 }
 
+/* Set position and styles for breakfast label */
 .breakfast-label {
 	position: absolute;
 	top: 0.625rem;
@@ -80,24 +96,30 @@
 	color: black;
 }
 
+/* Set position and styles for label group */
 .label-group {
 	position: absolute;
 	top: 9.5rem;
 	left: 1.6rem;
 	gap: 0.625rem;
 }
+
+/* Set background color for time label */
 .time-label {
 	background-color: #ffc107;
 }
 
+/* Set background color for servings label */
 .servings-label {
 	background-color: #007bff;
 }
 
+/* Set background color for difficulty label */
 .difficulty-label {
 	background-color: #28a745;
 }
 
+/* Set border radius, width, position, and display for card */
 .card {
 	border-radius: 20px;
 	width: 18rem;
@@ -106,38 +128,36 @@
 	justify-content: center;
 }
 
-.card-content {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 0.625rem;
-}
-
+/* Set display and justify content for main */
 main {
 	display: flex;
 	justify-content: space-around;
 }
 
+/* Set padding for total container */
 .total-container {
 	padding: 1rem;
 }
 
+/* Set margin right for font awesome icons */
 .fa-clock,
 .fa-user-friends,
 .fa-thumbs-up,
-.fa-apple-alt{
+.fa-apple-alt {
 	margin-right: 0.3rem;
 }
 
+/* Set color for clock icon */
 .fa-clock {
 	color: red;
 }
 
+/* Set margin right for skull icon */
 .fa-skull-crossbones {
 	margin-right: 0.3rem;
 }
 
+/* Set background color, padding, border radius, font weight for vegan button */
 #vegan-button {
 	background-color: #05673d;
 	padding: 0.6rem 1.8rem;
@@ -145,19 +165,24 @@ main {
 	font-weight: 600;
 }
 
+/* Set border radius for primary button */
 .btn-primary {
 	border-radius: 10px;
 }
 
+/* Set color and padding right for ice cream icon */
 .fa-ice-cream {
 	color: #007bff;
 	padding-right: 0.3rem;
 }
 
+/* Set padding right for smile and utensils icons */
 .fa-smile,
 .fa-utensils {
 	padding-right: 0.4rem;
 }
+
+/* Set background color, border radius, padding, position, width, and z-index for cookie */
 .cookie {
 	background-color: gray;
 	border-radius: 10px;
@@ -168,11 +193,13 @@ main {
 	z-index: 9999;
 }
 
+/* Set color, margin bottom for cookie paragraph */
 .cookie p {
 	color: black;
 	margin-bottom: 0;
 }
 
+/* Set font size, margin top, margin right for accept, reject, and learn more buttons in cookie */
 .cookie .accept,
 .cookie .reject,
 .cookie .learn-more {
@@ -181,72 +208,85 @@ main {
 	margin-right: 5px;
 }
 
+/* Set color, border radius for accept and reject buttons in cookie */
 .cookie .accept,
 .cookie .reject {
 	color: #fff !important;
 	border-radius: 32px;
 }
 
+/* Set background color for accept button in cookie */
 .cookie .accept {
 	background-color: #007bff;
 }
 
+/* Set background color for reject button in cookie */
 .cookie .reject {
 	background-color: #ff454d;
 }
 
+/* Set background color, color, and border for learn more button in cookie */
 .cookie .learn-more {
 	background-color: lightgray;
 	color: #333 !important;
 	border: none;
 }
 
+/* Set background color on hover for learn more button in cookie */
 .cookie .learn-more:hover {
 	background-color: #d4d4d4;
 }
 
-
-
+/* Set position for button group */
 .button-group {
 	position: absolute;
 	right: 10px;
-	bottom: 10px; 
+	bottom: 10px;
 }
 
+/* Set min width for text group paragraph */
 .text-group p {
 	min-width: 80%;
 }
 
+/* Remove left margin for container */
 .container {
 	margin-left: 0;
 }
 
+/* Set border radius for learn more button */
 .learn-more {
 	border-radius: 30px;
 }
 
+/* Set display and align items for button group */
 .button-group {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 }
 
+/* Set display and justify content for share button */
 #shareButton {
-    display: flex;
-    justify-content: flex-end;
+	display: flex;
+	justify-content: flex-end;
 }
 
+/* Set display, line clamp, box orientation, and overflow for text truncate mobile */
 .text-truncate-mobile {
 	display: -webkit-box;
-	-webkit-line-clamp: 3; 
+	-webkit-line-clamp: 3;
 	-webkit-box-orient: vertical;
 	overflow: hidden;
 }
 
+/* Set width, height, and object fit for carousel item images */
 .carousel-item img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 }
+
+/* Set display, flex direction, font size, text align, align items, font weight, and color for Ciaran text */
 #ciaran-text {
 	display: flex;
 	flex-direction: column;
@@ -254,49 +294,46 @@ main {
 	text-align: center;
 	align-items: center;
 	font-weight: 900;
-	color: #FF454D;
+	color: #ff454d;
 }
 
-
+/* Set text align for Denis text */
 #denis-text {
 	text-align: center;
-
 }
 
+/* Remove left margin for my container */
 #myContainer {
-	margin-left: 0
+	margin-left: 0;
 }
 
-
+/* Set max width for container fluid and width for col-md-4 on screens larger than 1440px */
 @media (min-width: 1440px) {
-.container-fluid {
-        max-width: 60%; 
-    }
-
+	.container-fluid {
+		max-width: 60%;
+	}
 	.col-md-4 {
 		width: 100%;
 	}
 }
+
+/* Add hover effect to primary button and card on screens larger than 1024px */
 @media (min-width: 1024px) {
 	.btn-primary:hover {
-		box-shadow: 0 4px 6px 0 green; 
-		transition: box-shadow 0.4s ease-in-out; 
+		box-shadow: 0 4px 6px 0 green;
+		transition: box-shadow 0.4s ease-in-out;
 	}
-
 	.card:hover {
-		box-shadow: 0 4px 8px 0 green; 
+		box-shadow: 0 4px 8px 0 green;
 		transform: rotate(8deg);
 	}
-
 	.nav-link:hover {
 		color: green;
 		transform: scale(1.1);
 	}
-
 	.navbar-brand > img:hover {
 		transform: scale(1.2);
 	}
-
 	.cookie .accept:hover,
 	.cookie .reject:hover {
 		background-color: #05673d;
@@ -306,14 +343,12 @@ main {
 	}
 }
 
+/* Set height for carousel inner and max width for custom max width lg on screens larger than 992px */
 @media (min-width: 992px) {
 	.carousel-inner {
 		height: 700px;
 	}
 	.custom-max-width-lg {
-        max-width: 60%;
-    }
-
-  }
-
-  
+		max-width: 60%;
+	}
+}
